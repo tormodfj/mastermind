@@ -5,4 +5,5 @@ ipch
 *.suo
 *.obj
 *.ncb
+*.sdf
 *.opensdf
