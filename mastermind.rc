@@ -1,0 +1,234 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Norwegian (Bokmal) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NOR)
+#ifdef _WIN32
+LANGUAGE LANG_NORWEGIAN, SUBLANG_NORWEGIAN_BOKMAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+mastermind              ICON                    "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+about DIALOGEX 0, 0, 186, 60
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Mastermind"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,39,50,14
+    ICON            "mastermind",IDC_STATIC,7,7,20,20
+    CTEXT           "Mastermind",IDC_STATIC,73,7,38,8
+    CTEXT           "© Tormod Fjeldskår 2003",IDC_STATIC,51,20,82,8
+END
+
+help DIALOGEX 0, 0, 186, 172
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Mastermind"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,151,50,14
+    ICON            "mastermind",IDC_STATIC,7,7,21,20
+    LTEXT           "Press the colored buttons in the left pane to place pieces on the board. Each time you fill a line with four pieces, black and/or white sticks may appear to the right of the line.",
+                    IDC_STATIC,36,7,118,41
+    LTEXT           "A white stick means that you have placed a correctly colored piece on the board, but in an incorrect position. A black stick means you have placed a correctly colored piece on a correct position.",
+                    IDC_STATIC,36,54,120,48
+    LTEXT           "The goal is to eventually unveil the four pieces randomly selected by the computer.",
+                    IDC_STATIC,36,108,120,24
+    LTEXT           "Good luck!",IDC_STATIC,36,141,34,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+mastermind MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tF2",                    IDM_FILE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tEsc",                  IDM_APP_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Help...\tF1",                 IDM_HELP_INDEX
+        MENUITEM SEPARATOR
+        MENUITEM "&About Mastermind...",        IDM_APP_ABOUTMASTERMIND
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    "about", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    "help", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+mastermind ACCELERATORS 
+BEGIN
+    VK_ESCAPE,      IDM_APP_EXIT,           VIRTKEY, NOINVERT
+    "^N",           IDM_FILE_NEW,           ASCII,  NOINVERT
+    VK_F2,          IDM_FILE_NEW,           VIRTKEY, NOINVERT
+    VK_F1,          IDM_HELP_INDEX,         VIRTKEY, NOINVERT
+END
+
+#endif    // Norwegian (Bokmal) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080904b0"
+        BEGIN
+            VALUE "Comments", "Mastermind board game"
+            VALUE "CompanyName", "Tormod Fjeldskår"
+            VALUE "FileDescription", "Mastermind"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "mastermi"
+            VALUE "LegalCopyright", "Copyright (C) 2003"
+            VALUE "OriginalFilename", "mastermind.exe"
+            VALUE "ProductName", "Mastermind"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x809, 1200
+    END
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
